@@ -1,0 +1,47 @@
+/*
+$color-d-blue: #112F41;
+$color-h-blue: #068587;
+$color-turquoise: #4FB99F;
+$color-yellow: #F2B134;
+$color-red: #ED553B;*/
+
+.btn-primary{
+    background-color: #068587;
+    border-radius: 0;
+    border: none;
+    transition: 1s;
+}
+
+.btn-primary:hover{
+    background-color: #4FB99F;
+}
+
+.title{
+    color: white;
+    margin: 60px 0 40px;
+    border-top: 2px solid #ED553B;
+}
+
+.card{
+    border-radius: 0;
+    border: none;
+    margin: 2em 0;
+}
+
+.card-img-top{
+    border-radius: 0;
+}
+
+.card-detail-information{
+    background-color: #112F41;
+    color: white;
+}
+
+.no-padding{
+    padding: 0 15px;
+}
+
+.card-title-custom{
+    padding: 15px;
+}
+
