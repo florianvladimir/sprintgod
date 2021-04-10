@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link type="text/css" href="styles/main.css" rel="stylesheet"/>
+    <link type="text/css" href="styles/btstrpCust.css" rel="stylesheet"/>
+    <title>Swiss Sprint God</title>
+</head>
+<script>
+    // Set the date we're counting down to
+    var myDate = new Date("2021-04-10");
+    myDate.setHours(12);
+    myDate.setMinutes(45);
+    var countDownDate = myDate.getTime();
+
+    var intervalId = window.setInterval(function(){
+        checkCountdown2();
+    }, 5000);
+
+    function checkCountdown2(){
+        if(Date.now() <= countDownDate){
+            window.location.href = "./index.html";
+        }
+    }
+    </script>
+<body>
+    <div style="margin: 30vh auto; text-align: center; color: white; font-family: 'Times New Roman', Times, serif;">
+        
+        <br>
+        <br>
+        <p>†</p>
+        <p style="margin-bottom: 0;">Swiss Sprint God</p>
+        <small>1998-2021</small>
+        <br>
+        <br>
+        <p><em>Konfrontiert mit den immer selben Vorwürfen<br> beschloss er, sich für immer und ewig  <br> von der Rolle des "Sprintgottes" abzuwenden.</em></p>
+        
+    </div>
+
+</body>
+
+
+</html>

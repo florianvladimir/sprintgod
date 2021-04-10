@@ -13,6 +13,50 @@
     <link type="text/css" href="styles/btstrpCust.css" rel="stylesheet"/>
     <title>Swiss Sprint God</title>
 </head>
+<script>
+    // Set the date we're counting down to
+    var myDate = new Date("2021-04-10");
+    myDate.setHours(12);
+    myDate.setMinutes(45);
+    var countDownDate = myDate.getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+
+    var intervalId = window.setInterval(function(){
+        checkCountdown();
+        console.log("d")
+    }, 5000);
+
+    function checkCountdown(){
+        if(Date.now() >= countDownDate){
+            window.location.href = "./f.html";
+        }
+    }
+    </script>
 <body>
 
 <div class="parallax" id="parallax0">
@@ -26,6 +70,14 @@
 <div class="main-content">
     <div class="container">
         <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="demo">missverstanden</h5>
+
+                    </div>
+                </div>
+            </div>
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
