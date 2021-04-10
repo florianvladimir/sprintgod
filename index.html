@@ -17,7 +17,7 @@
     // Set the date we're counting down to
     var myDate = new Date("2021-04-10");
     myDate.setHours(12);
-    myDate.setMinutes(45);
+    myDate.setMinutes(56);
     var countDownDate = myDate.getTime();
     
     // Update the count down every 1 second
@@ -43,18 +43,9 @@
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "EXPIRED";
+        window.location.href = "./f.html";
       }
     }, 1000);
-
-    var intervalId = window.setInterval(function(){
-        checkCountdown();
-    }, 5000);
-
-    function checkCountdown(){
-        if(Date.now() >= countDownDate){
-            window.location.href = "./f.html";
-        }
-    }
     </script>
 <body>
 
